@@ -1,0 +1,58 @@
+//
+//  UserDetails.swift
+//  UsersList
+//
+//  Created by Paula Hasstenteufel on 2022-06-15.
+//
+
+import Foundation
+
+struct UserDetails {
+    private struct UserData {
+        var id
+        var firstName
+        var lastName
+        var email
+        var avatarUrl
+    }
+    
+    private struct UserSupport {
+        var url
+        var text
+    }
+}
+
+extension UserDetails: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case data
+        case support
+        
+        enum DataKeys: String, CodingKey {
+            case id
+            case email
+            case avatarUrl = "avatar"
+            case firstName = "first_name"
+            case lastName = "last_name"
+        }
+        
+        enum SupportKeys: String, CodingKey {
+            case url
+            case text
+        }
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let data = try container.nestedContainer(keyedBy: CodingKeys.DataKeys.self, forKey: .data)
+        id = try data.decode(URL.self, forKey: .id)
+        email = try data.decode(URL.self, forKey: .email)
+        avatarUrl = try data.decode(URL.self, forKey: .avatarUrl)
+        firstName = try data.decode(URL.self, forKey: .firstName)
+        lastName = try data.decode(URL.self, forKey: .lastName)
+        
+        let support = try container.nestedContainer(keyedBy: CodingKeys.SupportKeys.self, forKey: .support)
+        url = try support.decode(String.self, forKey: .url)
+        text = try support.decode(URL.self, forKey: .text)
+    }
+}
