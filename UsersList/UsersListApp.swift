@@ -11,7 +11,9 @@ import SwiftUI
 struct UsersListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserDetailsView(userDetails: .init(TestData.userDetails))
         }
     }
 }
+
+
