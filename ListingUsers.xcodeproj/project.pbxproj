@@ -40,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DAA29B5B285A783000C70D12 /* UsersList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA29B5B285A783000C70D12 /* ListingUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListingUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B5E285A783000C70D12 /* UsersListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListApp.swift; sourceTree = "<group>"; };
 		DAA29B60285A783000C70D12 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		DAA29B62285A783600C70D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA29B65285A783600C70D12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DAA29B6B285A783700C70D12 /* UsersListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA29B6B285A783700C70D12 /* ListingUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListingUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B6F285A783700C70D12 /* UsersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListTests.swift; sourceTree = "<group>"; };
-		DAA29B75285A783700C70D12 /* UsersListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA29B75285A783700C70D12 /* ListingUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListingUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B79285A783700C70D12 /* UsersListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListUITests.swift; sourceTree = "<group>"; };
 		DAA29B7B285A783700C70D12 /* UsersListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DAA29B88285A7EFD00C70D12 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		DAA29B5C285A783000C70D12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAA29B5B285A783000C70D12 /* UsersList.app */,
-				DAA29B6B285A783700C70D12 /* UsersListTests.xctest */,
-				DAA29B75285A783700C70D12 /* UsersListUITests.xctest */,
+				DAA29B5B285A783000C70D12 /* ListingUsers.app */,
+				DAA29B6B285A783700C70D12 /* ListingUsersTests.xctest */,
+				DAA29B75285A783700C70D12 /* ListingUsersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAA29B5A285A783000C70D12 /* UsersList */ = {
+		DAA29B5A285A783000C70D12 /* ListingUsers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA29B7F285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersList" */;
+			buildConfigurationList = DAA29B7F285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsers" */;
 			buildPhases = (
 				DAA29B57285A783000C70D12 /* Sources */,
 				DAA29B58285A783000C70D12 /* Frameworks */,
@@ -200,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = UsersList;
+			name = ListingUsers;
 			productName = UsersList;
-			productReference = DAA29B5B285A783000C70D12 /* UsersList.app */;
+			productReference = DAA29B5B285A783000C70D12 /* ListingUsers.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DAA29B6A285A783700C70D12 /* UsersListTests */ = {
+		DAA29B6A285A783700C70D12 /* ListingUsersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA29B82285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersListTests" */;
+			buildConfigurationList = DAA29B82285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsersTests" */;
 			buildPhases = (
 				DAA29B67285A783700C70D12 /* Sources */,
 				DAA29B68285A783700C70D12 /* Frameworks */,
@@ -218,14 +218,14 @@
 			dependencies = (
 				DAA29B6D285A783700C70D12 /* PBXTargetDependency */,
 			);
-			name = UsersListTests;
+			name = ListingUsersTests;
 			productName = UsersListTests;
-			productReference = DAA29B6B285A783700C70D12 /* UsersListTests.xctest */;
+			productReference = DAA29B6B285A783700C70D12 /* ListingUsersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DAA29B74285A783700C70D12 /* UsersListUITests */ = {
+		DAA29B74285A783700C70D12 /* ListingUsersUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA29B85285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersListUITests" */;
+			buildConfigurationList = DAA29B85285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsersUITests" */;
 			buildPhases = (
 				DAA29B71285A783700C70D12 /* Sources */,
 				DAA29B72285A783700C70D12 /* Frameworks */,
@@ -236,9 +236,9 @@
 			dependencies = (
 				DAA29B77285A783700C70D12 /* PBXTargetDependency */,
 			);
-			name = UsersListUITests;
+			name = ListingUsersUITests;
 			productName = UsersListUITests;
-			productReference = DAA29B75285A783700C70D12 /* UsersListUITests.xctest */;
+			productReference = DAA29B75285A783700C70D12 /* ListingUsersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DAA29B56285A783000C70D12 /* Build configuration list for PBXProject "UsersList" */;
+			buildConfigurationList = DAA29B56285A783000C70D12 /* Build configuration list for PBXProject "ListingUsers" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -277,9 +277,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAA29B5A285A783000C70D12 /* UsersList */,
-				DAA29B6A285A783700C70D12 /* UsersListTests */,
-				DAA29B74285A783700C70D12 /* UsersListUITests */,
+				DAA29B5A285A783000C70D12 /* ListingUsers */,
+				DAA29B6A285A783700C70D12 /* ListingUsersTests */,
+				DAA29B74285A783700C70D12 /* ListingUsersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,12 +348,12 @@
 /* Begin PBXTargetDependency section */
 		DAA29B6D285A783700C70D12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAA29B5A285A783000C70D12 /* UsersList */;
+			target = DAA29B5A285A783000C70D12 /* ListingUsers */;
 			targetProxy = DAA29B6C285A783700C70D12 /* PBXContainerItemProxy */;
 		};
 		DAA29B77285A783700C70D12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAA29B5A285A783000C70D12 /* UsersList */;
+			target = DAA29B5A285A783000C70D12 /* ListingUsers */;
 			targetProxy = DAA29B76285A783700C70D12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +547,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsersList.app/UsersList";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListingUsers.app/ListingUsers";
 			};
 			name = Debug;
 		};
@@ -567,7 +567,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsersList.app/UsersList";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListingUsers.app/ListingUsers";
 			};
 			name = Release;
 		};
@@ -610,7 +610,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAA29B56285A783000C70D12 /* Build configuration list for PBXProject "UsersList" */ = {
+		DAA29B56285A783000C70D12 /* Build configuration list for PBXProject "ListingUsers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA29B7D285A783700C70D12 /* Debug */,
@@ -619,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA29B7F285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersList" */ = {
+		DAA29B7F285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA29B80285A783700C70D12 /* Debug */,
@@ -628,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA29B82285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersListTests" */ = {
+		DAA29B82285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA29B83285A783700C70D12 /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA29B85285A783700C70D12 /* Build configuration list for PBXNativeTarget "UsersListUITests" */ = {
+		DAA29B85285A783700C70D12 /* Build configuration list for PBXNativeTarget "ListingUsersUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA29B86285A783700C70D12 /* Debug */,

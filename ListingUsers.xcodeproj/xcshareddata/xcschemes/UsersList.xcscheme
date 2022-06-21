@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAA29B5A285A783000C70D12"
                BuildableName = "UsersList.app"
-               BlueprintName = "UsersList"
-               ReferencedContainer = "container:UsersList.xcodeproj">
+               BlueprintName = "ListingUsers"
+               ReferencedContainer = "container:ListingUsers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAA29B6A285A783700C70D12"
                BuildableName = "UsersListTests.xctest"
-               BlueprintName = "UsersListTests"
-               ReferencedContainer = "container:UsersList.xcodeproj">
+               BlueprintName = "ListingUsersTests"
+               ReferencedContainer = "container:ListingUsers.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,8 +44,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAA29B74285A783700C70D12"
                BuildableName = "UsersListUITests.xctest"
-               BlueprintName = "UsersListUITests"
-               ReferencedContainer = "container:UsersList.xcodeproj">
+               BlueprintName = "ListingUsersUITests"
+               ReferencedContainer = "container:ListingUsers.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAA29B5A285A783000C70D12"
             BuildableName = "UsersList.app"
-            BlueprintName = "UsersList"
-            ReferencedContainer = "container:UsersList.xcodeproj">
+            BlueprintName = "ListingUsers"
+            ReferencedContainer = "container:ListingUsers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,8 +83,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAA29B5A285A783000C70D12"
             BuildableName = "UsersList.app"
-            BlueprintName = "UsersList"
-            ReferencedContainer = "container:UsersList.xcodeproj">
+            BlueprintName = "ListingUsers"
+            ReferencedContainer = "container:ListingUsers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
