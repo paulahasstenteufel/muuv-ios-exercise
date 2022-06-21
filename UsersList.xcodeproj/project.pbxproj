@@ -19,6 +19,7 @@
 		DAA29B8F285A834300C70D12 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B8E285A834300C70D12 /* UserDetails.swift */; };
 		DAA29B94285AA4D000C70D12 /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B93285AA4D000C70D12 /* UserDetailsModel.swift */; };
 		DAA29B96285BE98100C70D12 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B95285BE98100C70D12 /* TestData.swift */; };
+		DAA29B9828627EE900C70D12 /* UsersList.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA29B9728627EE900C70D12 /* UsersList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DAA29B8E285A834300C70D12 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		DAA29B93285AA4D000C70D12 /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
 		DAA29B95285BE98100C70D12 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		DAA29B9728627EE900C70D12 /* UsersList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA29B8B285A82DC00C70D12 /* UserDetails.json */,
+				DAA29B9728627EE900C70D12 /* UsersList.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				DAA29B66285A783600C70D12 /* Preview Assets.xcassets in Resources */,
 				DAA29B63285A783600C70D12 /* Assets.xcassets in Resources */,
 				DAA29B8C285A82DC00C70D12 /* UserDetails.json in Resources */,
+				DAA29B9828627EE900C70D12 /* UsersList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
