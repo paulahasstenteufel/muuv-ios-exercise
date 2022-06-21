@@ -28,8 +28,10 @@ struct UserDetailsView: View {
                 
                 Spacer()
                 
-                Text(userDetails.supportText) //TODO: Add link from url
-                    .font(.caption)
+                //TODO: Add link from url
+                if let supportText = userDetails.supportText {
+                    Text(supportText).font(.caption)
+                }
             }
             .padding()
             

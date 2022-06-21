@@ -9,7 +9,7 @@ import Foundation
 
 struct UserDetails {
     var data: Data
-    var support: Support
+    var support: Support?
     
     struct Data: Decodable {
         var id: Decimal?
@@ -50,7 +50,7 @@ extension UserDetails: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         data = try container.decode(Self.Data.self, forKey: .data)
-        support = try container.decode(Self.Support.self, forKey: .support)
+        support = try? container.decode(Self.Support.self, forKey: .support)
         
         let dataContainer = try container.nestedContainer(keyedBy: CodingKeys.DataKeys.self, forKey: .data)
         data.id = try? dataContainer.decode(Decimal.self, forKey: .id)
@@ -60,7 +60,7 @@ extension UserDetails: Decodable {
         data.avatar = try? dataContainer.decode(String.self, forKey: .avatar)
         
         let supportContainer = try container.nestedContainer(keyedBy: CodingKeys.SupportKeys.self, forKey: .support)
-        support.url = try? supportContainer.decode(String.self, forKey: .url)
-        support.text = try? supportContainer.decode(String.self, forKey: .text)
+        support?.url = try? supportContainer.decode(String.self, forKey: .url)
+        support?.text = try? supportContainer.decode(String.self, forKey: .text)
     }
 }
