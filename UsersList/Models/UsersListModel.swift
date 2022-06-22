@@ -11,6 +11,7 @@ struct UsersListModel {
     struct UserRow {
         var avatar: URL?
         var name: String
+        var id: Decimal
     }
     
     var currentPage: Decimal
@@ -24,7 +25,8 @@ struct UsersListModel {
             .map { user in
                 UserRow(
                     avatar: URL(string: user.data.avatar ?? ""),
-                    name: (user.data?.lastName ?? "" + ", " + user.data?.firstName ?? "")
+                    name: (user.data.lastName + ", " + user.data.firstName),
+                    id: user.data.id
                 )
             }
     }
