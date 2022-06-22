@@ -39,11 +39,15 @@ struct RoundImageView: View {
 }
 
 struct RowView: View {
-    let userDetails: UserDetailsModel
+    let row: UsersListModel.UserRow
     
     var body: some View {
-        VStack {
+        HStack {
+            AsyncImage(url: row.avatar)
             
+            Text(row.name)
+            
+            Spacer()
         }
     }
 }
