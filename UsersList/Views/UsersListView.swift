@@ -20,3 +20,10 @@ struct UsersListView: View {
         }
     }
 }
+
+struct UsersListView_Previews: PreviewProvider {
+    static var previews: some View {
+        let list = UsersListModel(TestData.usersList)
+        UsersListView(list: list)
+    }
+}
