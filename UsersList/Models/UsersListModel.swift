@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct UsersListModel {
-    typealias Users = [UserDetails]
+    struct UserRow {
+        var avatar: URL?
+        var name: String
+    }
     
     var currentPage: Decimal
     var totalPages: Decimal
-    var users: Users
+    var users: [UserRow]
     
     init(_ dto: UsersList) {
         currentPage = dto.page
         totalPages = dto.totalPages
         users = dto.users
+            .map { user in
+                UserRow(
+                    avatar: URL(string: user.data.avatar ?? ""),
+                    name: (user.data?.lastName ?? "" + ", " + user.data?.firstName ?? "")
+                )
+            }
     }
 }
