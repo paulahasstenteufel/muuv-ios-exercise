@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5D0E742862864F00484862 /* UsersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D0E732862864F00484862 /* UsersList.swift */; };
 		DAA29B5F285A783000C70D12 /* UsersListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B5E285A783000C70D12 /* UsersListApp.swift */; };
 		DAA29B61285A783000C70D12 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B60285A783000C70D12 /* UserDetailsView.swift */; };
 		DAA29B63285A783600C70D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA29B62285A783600C70D12 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA5D0E732862864F00484862 /* UsersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersList.swift; sourceTree = "<group>"; };
 		DAA29B5B285A783000C70D12 /* ListingUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListingUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B5E285A783000C70D12 /* UsersListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListApp.swift; sourceTree = "<group>"; };
 		DAA29B60285A783000C70D12 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA29B8E285A834300C70D12 /* UserDetails.swift */,
+				DA5D0E732862864F00484862 /* UsersList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				DAA29B8F285A834300C70D12 /* UserDetails.swift in Sources */,
 				DAA29B94285AA4D000C70D12 /* UserDetailsModel.swift in Sources */,
 				DAA29B96285BE98100C70D12 /* TestData.swift in Sources */,
+				DA5D0E742862864F00484862 /* UsersList.swift in Sources */,
 				DAA29B5F285A783000C70D12 /* UsersListApp.swift in Sources */,
 				DAA29B89285A7EFD00C70D12 /* ImageView.swift in Sources */,
 			);

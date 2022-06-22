@@ -18,11 +18,6 @@ struct UserDetails {
         var email: String?
         var avatar: String?
     }
-    
-    struct Support: Decodable {
-        var url: String?
-        var text: String?
-    }
 }
 
 extension UserDetails: Decodable {
@@ -37,11 +32,6 @@ extension UserDetails: Decodable {
             case firstName = "first_name"
             case lastName = "last_name"
         }
-        
-        enum SupportKeys: String, CodingKey {
-            case url
-            case text
-        }
     }
     
     // Need to define which values need to be successfully fetched
@@ -50,7 +40,6 @@ extension UserDetails: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         data = try container.decode(Self.Data.self, forKey: .data)
-        support = try? container.decode(Self.Support.self, forKey: .support)
         
         let dataContainer = try container.nestedContainer(keyedBy: CodingKeys.DataKeys.self, forKey: .data)
         data.id = try? dataContainer.decode(Decimal.self, forKey: .id)
@@ -58,9 +47,5 @@ extension UserDetails: Decodable {
         data.firstName = try? dataContainer.decode(String.self, forKey: .firstName)
         data.lastName = try? dataContainer.decode(String.self, forKey: .lastName)
         data.avatar = try? dataContainer.decode(String.self, forKey: .avatar)
-        
-        let supportContainer = try container.nestedContainer(keyedBy: CodingKeys.SupportKeys.self, forKey: .support)
-        support?.url = try? supportContainer.decode(String.self, forKey: .url)
-        support?.text = try? supportContainer.decode(String.self, forKey: .text)
     }
 }
