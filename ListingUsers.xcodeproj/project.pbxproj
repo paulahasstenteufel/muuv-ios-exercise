@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA5D0E742862864F00484862 /* UsersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D0E732862864F00484862 /* UsersList.swift */; };
+		DA5D0E76286299D000484862 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D0E75286299D000484862 /* UsersListView.swift */; };
+		DA5D0E7828629B1600484862 /* UsersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D0E7728629B1600484862 /* UsersListModel.swift */; };
 		DAA29B5F285A783000C70D12 /* UsersListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B5E285A783000C70D12 /* UsersListApp.swift */; };
 		DAA29B61285A783000C70D12 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B60285A783000C70D12 /* UserDetailsView.swift */; };
 		DAA29B63285A783600C70D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA29B62285A783600C70D12 /* Assets.xcassets */; };
@@ -15,7 +17,7 @@
 		DAA29B70285A783700C70D12 /* UsersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B6F285A783700C70D12 /* UsersListTests.swift */; };
 		DAA29B7A285A783700C70D12 /* UsersListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B79285A783700C70D12 /* UsersListUITests.swift */; };
 		DAA29B7C285A783700C70D12 /* UsersListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B7B285A783700C70D12 /* UsersListUITestsLaunchTests.swift */; };
-		DAA29B89285A7EFD00C70D12 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B88285A7EFD00C70D12 /* ImageView.swift */; };
+		DAA29B89285A7EFD00C70D12 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B88285A7EFD00C70D12 /* ImageViews.swift */; };
 		DAA29B8C285A82DC00C70D12 /* UserDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA29B8B285A82DC00C70D12 /* UserDetails.json */; };
 		DAA29B8F285A834300C70D12 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B8E285A834300C70D12 /* UserDetails.swift */; };
 		DAA29B94285AA4D000C70D12 /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA29B93285AA4D000C70D12 /* UserDetailsModel.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		DA5D0E732862864F00484862 /* UsersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersList.swift; sourceTree = "<group>"; };
+		DA5D0E75286299D000484862 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		DA5D0E7728629B1600484862 /* UsersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListModel.swift; sourceTree = "<group>"; };
 		DAA29B5B285A783000C70D12 /* ListingUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListingUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B5E285A783000C70D12 /* UsersListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListApp.swift; sourceTree = "<group>"; };
 		DAA29B60285A783000C70D12 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
@@ -52,7 +56,7 @@
 		DAA29B75285A783700C70D12 /* ListingUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListingUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA29B79285A783700C70D12 /* UsersListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListUITests.swift; sourceTree = "<group>"; };
 		DAA29B7B285A783700C70D12 /* UsersListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DAA29B88285A7EFD00C70D12 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DAA29B88285A7EFD00C70D12 /* ImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
 		DAA29B8B285A82DC00C70D12 /* UserDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserDetails.json; sourceTree = "<group>"; };
 		DAA29B8E285A834300C70D12 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		DAA29B93285AA4D000C70D12 /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
@@ -175,7 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				DAA29B60285A783000C70D12 /* UserDetailsView.swift */,
-				DAA29B88285A7EFD00C70D12 /* ImageView.swift */,
+				DAA29B88285A7EFD00C70D12 /* ImageViews.swift */,
+				DA5D0E75286299D000484862 /* UsersListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA29B93285AA4D000C70D12 /* UserDetailsModel.swift */,
+				DA5D0E7728629B1600484862 /* UsersListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,9 +330,11 @@
 				DAA29B8F285A834300C70D12 /* UserDetails.swift in Sources */,
 				DAA29B94285AA4D000C70D12 /* UserDetailsModel.swift in Sources */,
 				DAA29B96285BE98100C70D12 /* TestData.swift in Sources */,
+				DA5D0E7828629B1600484862 /* UsersListModel.swift in Sources */,
 				DA5D0E742862864F00484862 /* UsersList.swift in Sources */,
 				DAA29B5F285A783000C70D12 /* UsersListApp.swift in Sources */,
-				DAA29B89285A7EFD00C70D12 /* ImageView.swift in Sources */,
+				DAA29B89285A7EFD00C70D12 /* ImageViews.swift in Sources */,
+				DA5D0E76286299D000484862 /* UsersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
