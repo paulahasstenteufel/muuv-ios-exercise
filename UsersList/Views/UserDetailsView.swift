@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct UserDetailsView: View {
-    
     let userDetails: UserDetailsModel
+    
     var body: some View {
         VStack {
             BackgroundRectangularView()
