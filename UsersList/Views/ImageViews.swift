@@ -1,5 +1,5 @@
 //
-//  ImageView.swift
+//  ImageViews.swift
 //  UsersList
 //
 //  Created by Paula Hasstenteufel on 2022-06-15.
@@ -35,5 +35,15 @@ struct RoundImageView: View {
             Circle().stroke(.white, lineWidth: 6)
         }
         .shadow(radius: 5)
+    }
+}
+
+struct RowView: View {
+    let userDetails: UserDetailsModel
+    
+    var body: some View {
+        VStack {
+            
+        }
     }
 }
