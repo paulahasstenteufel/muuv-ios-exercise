@@ -13,7 +13,16 @@ struct TestData {
         let data = try! Data(contentsOf: url)
         let decoder = JSONDecoder()
         
-        var userDetails = try! decoder.decode(UserDetails.self, from: data)
-        return userDetails
+        var details = try! decoder.decode(UserDetails.self, from: data)
+        return details
+    }()
+    
+    static var usersList: UsersList = {
+        let url = Bundle.main.url(forResource: "UsersList", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        
+        var list = try! decoder.decode(UsersList.self, from: data)
+        return list
     }()
 }
